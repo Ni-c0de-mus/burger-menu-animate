@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Bai+Jamjuree|Carrois+Gothic+SC|Coda+Caption:800|Darker+Grotesque|Do+Hyeon|Gilda+Display|Homenaje|IM+Fell+English+SC|Krub|Montez|Overpass+Mono|Sansita|Seaweed+Script|Sedgwick+Ave+Display|Vast+Shadow|Yeon+Sung&display=swap');
+
+
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+:root {
+ /* Coolors 2 */
+
+--int-orange: #B80C09;
+--seal-brown: #6B2B06;
+--platinum: #E5E7E6;
+--black-shadows: #B7B5B3;
+--smokey-black: #141301;
+--brass: #B39C4D;
+--palm-leaf: #768948;
+--fern-green: #607744;
+--hunter-green: #34623F;
+--persian-redd: #C84630;
+--pastel-pink: #D4A0A7;
+--taupe-grey: #898989;
+--shiny-shamrock: #5DA271;
+--smoke: #758173;
+--laurel-green: #A9C5A0;
+--pastel-grey: #C6DEC6;
+--rich-black: #020402;
+--cerulean: #0081AF;
+--vivid-cerulean: #00ABE7;
+--spiro-disco: #2DC7FF;
+--desert-island: #EAD2AC;
+--yellow-red: #EABA6B;
+--pale-pink: #FFD9DA;
+--light-crimson: #EA638C;
+--pink-rasberry: #89023E;
+--gun-metal: #30343F;
+--jungle-green: #1B2021;
+--deep-saffron: #FFA630;
+--tea-green: #D7E8BA;
+--cadet-blue: #4DA1A9;
+--bdazzled-blue: #2E5077;
+--claret: #611C35;
+--dark-scarlet: #45062E;
+--silver-chalice: #ADA8B6;
+--charcoal: #2E4057; /* rgba(46, 64, 87, 1) */
+--red-ochre: #E9724C;
+--prune: #6F1D1B;
+--deer: #BB9457;
+--shadow: #8D775F;
+--champagne: #F1F0CC;
+--burleywood: #D5BF86;
+--viv-burgundy: #A71D31;
+--sark-sienna: #3F0D12;
+--dark-liver: #553D36;
+--wenge: #684A52;
+--old-silver: #857885;
+--cadet-grey: #87A0B2;
+--baby-blue: #A4BEF3;
+
+--yeon-sung: 'Yeon Sung', cursive;
+--coda-caption: 'Coda Caption', sans-serif;
+--overpass-mono: 'Overpass Mono', monospace;
+--bai-jamjuree: 'Bai Jamjuree', sans-serif;
+--krub: 'Krub', sans-serif;
+--anonymous-pro: 'Anonymous Pro', monospace;
+--dark-grotesque: 'Darker Grotesque', sans-serif;
+--gilder-display: 'Gilda Display', serif;
+--homenaje: 'Homenaje', sans-serif;
+--sansita: 'Sansita', sans-serif;
+--do-hyeon: 'Do Hyeon', sans-serif;
+--fell-english: 'IM Fell English SC', serif;
+--seaweed: 'Seaweed Script', cursive;
+--sedgwick: 'Sedgwick Ave Display', cursive;
+--vast-shadow: 'Vast Shadow', cursive;
+--carrois: 'Carrois Gothic SC', sans-serif;
+--montez: 'Montez', cursive;
+}
+
+html {
+ font-size: 10px;
+ box-sizing: border-box;
+}
+
+a {
+ text-decoration: none;
+}
+
+ul {
+ list-style: none;
+}
+
+img {
+ width: 100%;
+ max-width: 100%;
+ height: auto;
+}
+
+p {
+ font-size: 1.6rem;
+}
+
+section {
+ padding: 5rem 0;
+}
+
+body {
+ background: var(--fern-green);
+ color: var(--old-silver);
+ font-family: var(--krub);
+}
+
+/* Header */
+
+.toggle {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.toggle span {
+ width: 3.5rem;
+ height: .4rem;
+ margin-bottom: .9rem;
+ border-radius: .2rem;
+ position: relative;
+ background: var(--champagne);
+ display: block;
+ top: 0;
+ transition: 500ms ease;
+}
+
+.toggle span:nth-child(1) {
+ transform-origin: left;
+}
+
+.toggle span:nth-child(2) {
+ transform-origin: center;
+}
+
+.toggle span:nth-child(3) {
+ transform-origin: left;
+}
+
+.toggle.active span:nth-child(1) {
+ transform: rotate(45deg);
+ left: .2rem;
+}
+
+.toggle.active span:nth-child(2) {
+ transform: rotate(315deg);
+ right: .2rem;
+}
+
+.toggle.active span:nth-child(3) {
+ transform: scaleX(0);
+ right: .2rem;
+}
+
+
